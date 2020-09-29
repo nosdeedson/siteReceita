@@ -49,19 +49,19 @@ public class InserirDadosBD implements Serializable {
 		receita.setUser(user);
 		receita.setRestaurante(restaurante);
 		
-		Path path = FileSystems.getDefault().getPath("/home/edson/Imagens/teste.jpg");
-		Path path1 = FileSystems.getDefault().getPath("/home/edson/Imagens/teste2.jpg");
-		try {
-			List<byte[]> imgs = new ArrayList<byte[]>();
-			byte[] foto = Files.readAllBytes(path);
-			byte[] foto1 = Files.readAllBytes(path);
-			imgs.add(foto);
-			imgs.add(foto1);
-			receita.setFotos(imgs);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		Path path = FileSystems.getDefault().getPath("/home/edson/Imagens/teste.jpg");
+//		Path path1 = FileSystems.getDefault().getPath("/home/edson/Imagens/teste2.jpg");
+//		try {
+//			List<byte[]> imgs = new ArrayList<byte[]>();
+//			byte[] foto = Files.readAllBytes(path);
+//			byte[] foto1 = Files.readAllBytes(path);
+//			imgs.add(foto);
+//			imgs.add(foto1);
+//			receita.setFotos(imgs);
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 				
 		Favorito favorito = new Favorito();
 		favorito.setReceita(receita);
@@ -87,7 +87,7 @@ public class InserirDadosBD implements Serializable {
 		user1.setNome("Jose da Silva");
 		
 		Categoria categoria1 = new Categoria();
-		categoria.setNome("bebida");
+		categoria1.setNome("bebida");
 		
 		Restaurante restaurante1 = new Restaurante();
 		restaurante1.setEndereco("rua sem nome, centro.");
