@@ -12,9 +12,9 @@ import javax.persistence.Persistence;
 public class EntityManagerProducer {
 	
 	private EntityManagerFactory emf;
-	
+
 	public EntityManagerProducer() {
-		this.emf = Persistence.createEntityManagerFactory("beyondschoolPU");
+		this.emf = Persistence.createEntityManagerFactory("siteReceitaPU");
 	}
 	
 	@Produces

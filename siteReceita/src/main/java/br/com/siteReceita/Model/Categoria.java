@@ -2,6 +2,7 @@ package br.com.siteReceita.Model;
 
 import java.io.Serializable;
 
+import javax.inject.Inject;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -17,6 +18,7 @@ public class Categoria implements Serializable {
 	private Long id;
 	private String nome;
 	
+
 	public Categoria() {	}
 
 	@Id
